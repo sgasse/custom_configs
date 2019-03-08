@@ -115,8 +115,8 @@ let g:UltiSnipsEditSplit="vertical"
 let g:jedi#use_splits_not_buffers = "left"
 
 " commenting in python
-nnoremap <Leader>c 0i# <ESC>
-nnoremap <Leader>u 02x
+nnoremap <Leader>c :normal! 0i# <CR>
+nnoremap <Leader>u :normal! 02x<CR>
 
 " adding documentation in python
 let g:pydocstring_enable_mapping = 0
