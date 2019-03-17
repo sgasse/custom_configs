@@ -21,7 +21,7 @@ Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
 
 " Syntax Checking on Saving
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-syntastic/syntastic'
 
 " Highlight bad whitespace
 Plug 'bitc/vim-bad-whitespace'
@@ -109,6 +109,13 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" mark n lines
+nnoremap <Leader>m :<C-U>call CopyLines()<CR>
+function! CopyLines()
+    let c = v:count1
+    execute "normal! 0vk" . c . "jg_\"+y"
+endfunction
 
 " === python ===
 " Jedi-Vim customization
