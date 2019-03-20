@@ -17,4 +17,4 @@
 - anaconda path integration
 - agnoster theme
 
-Generate hardlinks with the script `update_hardlinks.sh`
+Update files with the script `update_dotfiles.sh`
