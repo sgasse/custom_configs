@@ -89,10 +89,22 @@ set smartcase
 set splitright
 set splitbelow
 
-" general indentation
+" indentation
 set tabstop=4
 set shiftwidth=4
 set expandtab
+function ToggleTab()
+    if &expandtab
+        set noexpandtab
+    else
+        set expandtab
+    endif
+endfunction
+nnoremap <F9> mz:execute ToggleTab()<CR>'z
+
+" show tabs and trailing whitespace
+set list
+set listchars=tab:!·,trail:·
 
 " Toggle NERDTree and enable deleting
 nmap <C-n> :NERDTreeToggle<CR>
