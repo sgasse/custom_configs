@@ -5,7 +5,7 @@ function create_link {
         echo "$1 exists, creating backup"
         mv "$HOME/$1" "$HOME/$1.backup"
     fi
-    ln "$1" "$HOME/$1"
+    ln -s "$1" "$HOME/$1"
 }
 
 config_files=( ".vimrc" ".tmux.conf" ".zshrc" )
