@@ -42,6 +42,10 @@ Plug 'heavenshell/vim-pydocstring'
 " Snippets for python
 Plug 'honza/vim-snippets'
 
+" === golang ===
+" Go support
+Plug 'fatih/vim-go'
+
 call plug#end()
 
 " === General ===
