@@ -67,6 +67,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " System Clipboard
+set clipboard=unnamedplus
 vnoremap <C-S-C> "+y
 inoremap <C-S-V> <ESC>"+pa
 nnoremap <C-S-V> "+pa
